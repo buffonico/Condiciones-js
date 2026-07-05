@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stickers</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .box {
+            display: flex;
+            margin: auto;
+            gap: 30px;
+            padding: 50px;
+            width: 80%;
+        }
+
+        .container {
+            width: 400px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container img {
+            width: 80%;
+            height: 80%;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: black;
+            text-align: start;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="box">
+        <div class="container">
+            <img src="./assets/img/sticker1.jpg" alt="" />
+            <input type="number" id="cant1" />
+        </div>
+        <div class="container">
+            <img src="./assets/img/sticker2.jpg" alt="" />
+            <input type="number" id="cant2" />
+        </div>
+        <div class="container">
+            <img src="./assets/img/sticker3.webp" alt="" />
+            <input type="number" id="cant3" />
+        </div>
+    </section>
+
+    <div id="result"></div>
+    <button onclick="reviewStickerAmount()">Verificar</button>
+
+    <div class="card">
+        <a href="./index.html">
+            <h2>Inicio</h2>
+        </a>
+    </div>
+
+    <script src="./assets/javascript.js"></script>
+
+</body>
+
+</html>
